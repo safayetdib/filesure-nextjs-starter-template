@@ -1,0 +1,22 @@
+{
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended", "prettier"],
+  "plugins": ["prettier"],
+  "globals": {
+    "React": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.{js,jsx,ts,tsx}"],
+      "rules": {
+        "prettier/prettier": "warn",
+        "indent": ["error", 2],
+        "no-unused-vars": "error",
+        "no-unused-expressions": "error",
+        "prefer-const": "error",
+        "no-console": "warn",
+        "no-undef": "error",
+        "camelcase": "error"
+      }
+    }
+  ]
+}
